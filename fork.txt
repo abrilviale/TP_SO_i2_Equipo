@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 Francisco Elias Romero
 
 Abril Viale
 IP:192.168.1.1
 Hora: 21:00
+=======
+Nombre: Lucas
+Apellido: Caballero
+IP: 192.168.2.107
+Hora: 12:04
+>>>>>>> a5955d1d11d7bd57710cbac7723c3fc22fc486d0

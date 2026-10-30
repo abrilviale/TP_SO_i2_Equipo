@@ -1,0 +1,57 @@
+a.lo que hice fue poner el "git commit -m" y luego despues de ese comando puso el "git push" para que se suba las modificaciones
+
+b.Si, ALFA puede actualizar su fork al estado del fork de GAMMA
+
+c.Si, si puede GAMMA actulizar su Fork al estado de ALFA.
+
+d.Si se agrega un nuevo documento no. Si se modifica el mismo archivo GIT te avisa.
+
+e) Listado de comandos necesarios para resolver el trabajo práctico:
+
+1. BETA: Crear el repositorio TP_SO_i2_Equipo en GitHub, agregar README.md y fork.txt.
+
+2. GAMMA: Realizar un Fork del repositorio de BETA y clonar su propio repositorio:
+git clone URL_DEL_FORK_DE_GAMMA
+cd TP_SO_i2_Equipo
+
+3. GAMMA: Modificar fork.txt agregando nombre, apellido, IP y hora. Guardar y subir los cambios:
+git add fork.txt
+git commit -m "Agrego datos de GAMMA"
+git push origin main
+
+4. ALFA: Realizar un Fork del repositorio de BETA y clonar su propio repositorio:
+git clone URL_DEL_FORK_DE_ALFA
+cd TP_SO_i2_Equipo
+
+5. ALFA: Modificar fork.txt agregando nombre, apellido, IP y hora. Guardar y subir los cambios:
+git add fork.txt
+git commit -m "Agrego datos de ALFA"
+git push origin main
+
+6. BETA: Crear el archivo NuevoDato.txt y subirlo a su repositorio:
+touch NuevoDato.txt
+git add NuevoDato.txt
+git commit -m "Agrego NuevoDato"
+git push origin main
+
+7. ALFA: Agregar el repositorio original de BETA como remoto:
+git remote add upstream https://github.com/FranciscoRomero01/TP_SO_i2_Equipo.git
+
+8. ALFA: Descargar e incorporar los cambios del repositorio de BETA:
+git pull upstream main
+
+9. ALFA: Subir los cambios actualizados a su Fork:
+git push origin main
+
+10. GAMMA: Agregar el repositorio original de BETA como remoto:
+git remote add upstream URL_DEL_REPOSITORIO_DE_BETA
+
+11. GAMMA: Descargar e incorporar los cambios del repositorio de BETA:
+git pull upstream main
+
+12. GAMMA: Subir los cambios actualizados a su Fork:
+git push origin main
+
+13. BETA, GAMMA y ALFA: Completar el archivo respuesta_I2_EquipoX.txt con las respuestas correspondientes a cada integrante y subir los cambios al repositorio.
+
+14. Verificar que los tres integrantes tengan sus repositorios actualizados y que el archivo de respuestas contenga todas las respuestas.
